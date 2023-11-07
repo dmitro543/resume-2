@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div>
+            {{#with program}}
+            <div>
+                <h1>{{name}}</h1>
+                   
+                   <br>
+
+                   {{#each data}}
+                   <div> 
+                    <address> Address:
+                      city : {{city}}
+                      country: {{country}}
+                    </address>
+                   {{/each}}
+                    <br> 
+
+                    {{#with data}}
+                        data :{{data}}
+                      <p>name: {{name}}  </p>
+                      <h2>type: {{type}}</h2>
+                      <h3>duration: {{duration}}</h3>
+                    {{/with}}
+                    <br>
+                    
+                    {{#with details}}
+                          {{#each location}}
+                             <address>Address: {{Address}}</address>
+                             <h4>city : {{city}}</h4>
+                             <h5>country: {{country}}</h5>
+                          {{/each}}
+                    {{/with}}
+                    <br>
+
+                    {{#with exhibits}}
+                       <h6>name: {{name}}</h6>
+                       <samp>artist: {{artist}}</samp>
+                       <span>description: {{description}}</span>
+                    {{/with}}
+                </div>
+            {{/with}}
+        </div>
+    </head>
+</html>
