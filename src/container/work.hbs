@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+ <html>
+    <head> 
+    <body>
+  <main>
+    <section>
+        <ul>
+          <div>
+           <div>{{>link text=company.name href=company.url blank=true noline=true}}</div>
+
+           <br>
+           <br>
+
+            <div>
+              <strong>Progects ({{progectAmount}})</strong>
+            </div>
+
+            <br>
+
+            <ul>
+               <li>
+                {{#each progects}}
+                  <div>{{<link text=name href=url blank=true noline=true}}</div>
+                     <br>
+                     <hr>
+
+                   <div>
+                       <p>
+                         {{#with about}}
+                            <h3>About: {{about}}</h3>
+                         {{/with}}
+                       </p>
+                   </div>
+                   <br>
+
+                   <div>
+                     <em>"Project stacks"</em>
+                     <b>((stackAmount '487'))</b>
+                     <abbr>{{awardAmount '456'}}</abbr>
+                   </div>
+                   <br>
+                    
+                   <div>
+                     {{#with stacks}}
+                       <h4>name: {{name}}</h4>
+                       <h5>name: {{name}}</h5>
+                       <h6>name: {{name}}</h6>
+                     {{/with}}
+                   </div>
+                   <br>
+                     
+                     <div>
+                       <em>"Project awards"</em>
+                     </div>
+                     <br>
+
+                   <div>
+                      {{#with awards}}
+                         <b>name: {{name}}</b>
+                         <span>name: {{name}}</span>
+                      {{/with}}
+                   </div>
+               </li>
+                {{/each}}
+            </ul>
+          </li>
+        <br>
+      </ul>
+     </div>
+    </section>
+   </main>
+  </body>
+ </head>
+</html>
+
+
+

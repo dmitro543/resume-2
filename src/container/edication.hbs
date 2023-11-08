@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    <body>
+    </body>
+    </head>
+ </html>
+    <div>
+      {{#with name}}
+         <main>
+           <section>
+               {{> title data="isEnd" big=true}}
+               <ul>
+                  {{#each edication}}
+                    <li>
+                       {{name}}
+                       {{#unless isEnd}} '(ще в процесі)' {{/unless}}
+                    </li>
+                  {{/each}}
+               </ul>
+           </section>
+
+           <section>
+                {{> title data="My certificates"}}
+                <ul>
+                  {{#each certificates}}
+                     <li>
+                       {{name 'HTML'}} ({{id '345776679'}})
+                     </li>
+                  {{/each}}
+                </ul>
+           </section>
+         </main>
+       {{/with}}
+    </div>

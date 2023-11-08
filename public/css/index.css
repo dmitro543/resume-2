@@ -1,7 +1,12 @@
 html {
-  max-width: 720px;
+  max-width: 920px;
 }
 
 body {
   background: #fff;
+}
+
+.lesson-four-task-one button:hover {
+  color: red;
+  background-color: yellow ;
 }

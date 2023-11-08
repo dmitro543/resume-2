@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div>
+            {{#with bio}}
+            <div>
+                <h1>{{name}}</h1>
+            </div>
+              {{/with}} 
+                    <br>
+
+                {{#each data}}
+                   <div>
+                      <article>birthdate: {{birthdate}}</article>
+                            <b>birthplace: {{birthplace}}</b>
+                         <span>deathdate: {{deathdate}}</span>
+                         <samp>deathplace: {{deathplace}}</samp>
+                         <abbr>nationality: {{nationality}}</abbr>
+                            <i>occupation: {{occupation}}</i>
+                   </div>
+                {{/each}}
+            </div>
+           {{/with}}
+        </div>
+    </head>
+</html>

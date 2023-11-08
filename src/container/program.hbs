@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div>
+            {{#with program}}
+              {{#with excursion}}
+                <div>
+                  <h1>name: {{name}}</h1>
+             
+                   <br>
+
+                   {{#each location}}
+                   <div> 
+                    <address> Address:
+                      city : {{city}}
+                      country: {{country}}
+                    </address>
+                   {{/each}}
+                    <br> 
+
+                    {{#with program}}
+                        data :{{data}}
+                      <p>name: {{name}}  </p>
+                      <h2>type: {{type}}</h2>
+                      <h3>duration: {{duration}}</h3>
+                    {{/with}}
+                    <br>
+                    
+                    {{#with details}}
+                        {{#each museum}}
+                          <i>name: {{name}}</i>
+                           {{#each location}}
+                             <address>Address: {{Address}}</address>
+                             <h4>city : {{city}}</h4>
+                             <h5>country: {{country}}</h5>
+                           {{/each}}
+                        {{/each}}
+                    {{/with}}
+                    <br>
+
+                    {{#with exhibits}}
+                       <h6>name: {{name}}</h6>
+                       <samp>artist: {{artist}}</samp>
+                       <span>description: {{description}}</span>
+                    {{/with}}
+                </div>
+              {{/with}} 
+            {{/with}}
+        </div>
+    </head>
+</html>

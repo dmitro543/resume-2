@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div>
+            {{#with person}}
+            <main>
+             <div>
+                <h1>{{name}}</h1>
+             </div>
+              <br>
+              <br>
+                     <h3>Age: {{age}}</h3>
+                    <br>
+                      <h4>Gender: {{gender}}</h4>
+                  <br>
+                    {{#with address}}
+                     <div>
+                     <address>Address:
+                        {{street}}
+                        {{city}}
+                        {{state}}
+                        {{zip}}
+                        {{country}}
+                      </address>
+                     </div>
+                    {{/with}}
+                    <br>
+                    <hr>
+                    <section>
+                       {{> title data='Edication' big=true }}
+                         <ul>
+                            {{#each edication}}
+                             <li>
+                              <samp>begree: {{degree}}</samp>
+                              <b>major: {{major}}</b>
+                              <i>university: {{university}}</i>
+                              <em>graduationYear: {{graduationYear}}</em>
+                             </li>
+                            {{/each}}
+                       </ul>
+                    </section>
+            {{/with}}
+        </div>
+    </head>
+</html>
