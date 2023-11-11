@@ -1,45 +1,30 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <div>
-            {{#with js}}
-            <div>
-                <h1>{{name}}</h1>
+{{#with js}}
+   {{#with data}}
+      <div>
+        <p>name:{{name}}</p>
+        <b>description:{{description}}</b>
+        <h2> history:{{year: "year"}}{{founder:"founder"}}</h2>
+      </div>
+   {{/with}} 
+        <br>
 
-                {{#with data}}
-                <div>
-                   <p>name:{{name}}</p>
-                </div>
-                {{/with}} 
-                    <br>
+   {{#each data}}
+      <div>
+        <h3>types: {{types}}</h3>
+      </div>
+    {{/each}}
+        <br> 
 
-                {{#each data}}
-                   <div>
-                     <p>description:{{description}}</p>
-                     <h2> history:{{history}}</h2>
-                     <h3> year: {{year}}</h3>
-                     <h4> founder: {{founder}}</h4>
-                   </div>
-                {{/each}}
-                    <br>
-
-                 {{#each types}}
-                  <h5>
-                    types:{{types}}
-                  </h5>
-                 {{/each}}
-                    <br>
-
-                 {{#each santax}}
-                      <h6> variables:{{variables}} </h6>
-                      <p>  functions: {{functions}}</p>
-                      <p>  conditionals: {{conditionals}}</p>
-                     <span>loops: {{loops}}</span>
-                        <b>classes: {{classes}} </b>
-                 {{/each}}
-
-            </div>
-            {{/with}}
-        </div>
-    </head>
-</html>
+    {{#each santax}}
+        <h6>variables:{{variables}} </h6>
+        <p>functions: {{functions}}</p>
+        <p>conditionals: {{conditionals}}</p>
+        <span>loops: {{loops}}</span>
+        <b>classes: {{classes}} </b>
+    {{/each}}
+    {{#with data}}
+        <pre>features: {{features}}</pre>
+        <ul>libraries: {{libraries}}</ul>
+        <li>tools: {{tools}}</li>
+    {{/with}}
+{{/with}}
