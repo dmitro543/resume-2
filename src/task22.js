@@ -1,55 +1,83 @@
-// ================================================================
-router.get('/task22', function (req, res) {
-    res.render('task22', {
-      layout: 'task22',
-      page_header: {
-        title: 'InnovaMind',
-        description: 'Welcome to our wonderful community',
-      },
-      section: {
-        about_us: {
-          title_list: {
-            main: 'InnovaMind',
-            sub: 'InnovaMind is a forward-thinking startup focused on innovation. We are dedicated to creating efficient and powerful software through the use of first-class functions.',
-          },
-          button: { text: 'Show more' },
-        },
-        advantage: {
-          title: 'Advantage',
-          efficiency: {
-            title: 'Efficiency',
-            sub_title: 'Streamline your software development',
-            description:
-              'Streamline your software development with our innovative platform...',
-            button: 'Show more',
-          },
-          innovation: {
-            title: 'Innovation',
-            sub_title:
-              'Forward-thinking approach to programming',
-            description:
-              ' Stay ahead of the curve with our forward-thinking approach to programming...',
-            button: 'Show more',
-          },
-          collaboration: {
-            title: 'Collaboration',
-            sub_title: 'Connect with like-minded developers',
-            description:
-              'Connect with a community of like-minded developers to share knowledge and insights...',
-            button: 'Show more',
-          },
-        },
-        agreement: {
-          title: 'Terms of use',
-          info: {
-            sub_title: 'Check out our requirements',
-            detail: {
-              text: 'By using or accessing the service, you agree to be bound by the terms and conditions outlined in the agreement.',
-              button: 'Аccept',
-            },
-          },
-        },
-      },
-    })
-  })
-  // ================================================================
+<div class="p-5">
+    <div class="card">
+       <div class="card-body">
+          <div class="card-title">
+           <div class="card">
+            <div class="card-body">
+             <div class="card-title">
+                  <div class="display-4"> <b>H1 Heading</b></div>
+                  <div>Paragraph</div>
+                  <br>
+                  <button type="button" class="btn btn-primary">Primary</button>
+                  <br>
+                  <br>
+                  <button type="button" class="btn btn-outline-primary">Outline Primary</button>
+                  <br>
+          </div>
+      </div>
+    </div>
+                 <br>
+
+               <div class="card">
+                 <div class="card-body">
+                  <div class="card-title">
+                    <div class="display-5"> <b>H2 Heading second</b></div>
+                       <div>Paragraph</div>
+                       <br>
+                       <button type="button" class="btn btn-secondary">Secondary</button>
+                       <br>
+                       <br>
+                       <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    </div>
+                  </div>
+               </div>
+             <br>
+
+               <div class="card">
+                  <div class="card-body">
+                   <div class="card-title">
+                    <div class="display-6"> <b>H3 Heading subblock</b></div>
+                    <div>Paragraph</div>
+                    <br>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                   </div>
+                 </div>
+               </div>
+         </div>
+        </div>
+      </div>
+            <br>
+
+    <div class="card">
+      <div class="card-body">
+       <div class="card-title">
+            <div class="display-2">
+                <b>Display 1 Nested</b>
+            </div>
+            <br>
+         <div class="card">
+            <div class="card-body">
+             <div class="card-title">
+               <div class="display-5">
+                <b>Display 4 Children</b>
+               </div>
+               <div>Paragraph</div>
+               <br>
+               <button type="button" class="btn btn-outline-warning">Warning</button>
+             </div>
+            </div>
+         </div>
+               <br>
+               <div class="display-6">
+                <b>H6 Heading</b>
+               </div>
+               <br>
+               <button type="button" class="btn btn-info">info</button>
+        </div>
+      </div>
+     </div>
+    </div>
+          
