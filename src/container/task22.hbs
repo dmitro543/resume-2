@@ -1,0 +1,34 @@
+{{#with task22}}
+    {{#with header}}
+       <h1>title: {{title}}</h1>
+       <h2>description: {{description}}</h2>
+       <br>
+       {{#each section}}
+          {{#with about_us}}
+            {{#with title_list}}
+               <h3>main: {{main}}</h3>
+               <h4>sub: {{sub}}</h4>
+            {{/with}}
+            <br>
+            <p>button: {{button}}</p>
+          {{/with}}
+           <br>
+          {{#with advantage}}
+             <b>title: {{title}}</b>
+             {{#each efficiency}}
+                <h5>title: {{title}}</h5>
+                <h6>sub_title: {{sub_title}}</h6>
+                <article>description: {{description}}</article>
+                <aside>button: {{button}}</aside>
+             {{/each}}
+             <br>
+             {{#each innovation}}
+                <b>title: {{title}}</b>
+                <samp>sub_title: {{sub_title}}</samp>
+                <span>description: {{description}}</span>
+                <strong>button: {{button}}</strong>
+             {{/each}}
+          {{/with}}
+       {{/each}}
+    {{/with}}
+{{/with}}
