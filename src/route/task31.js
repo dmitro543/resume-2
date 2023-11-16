@@ -1,0 +1,115 @@
+<div class="p-5">
+  <div class="text-center">
+    <div class="display-4">
+      <b>H1 Heading</b>
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <div class="text-end">
+        <div class="display-6">
+          <b>Display-6</b>
+        </div>
+        <div class="display-6">
+          <b>H2 Heading</b>
+        </div>
+      </div>
+      <br>
+      <button type="button" class="btn btn-outline-info">info</button>
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <div class="display-6">
+        <div class="text-muted">
+          <b>Display  5 Advantage</b>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+           <div class="display-6">
+            <div class="text-muted">
+              <b>Display 4 efficiency</b>
+            </div>
+           </div>
+           <br>
+           <div>
+            <b>H6 Heading</b>
+           </div>
+           <br>
+           <div>Paragraph</div>
+           <br>
+           <button type="button" class="btn btn-outline-warning">Warning</button>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+           <div class="text-center">
+             <div class="display-6">
+               <div class="text-muted">
+                 <b>Display 4 innovation</b>
+               </div>
+             </div>
+             <br>
+             <div>
+              <b>H6 Heading</b>
+             </div>
+             <br>
+             <div>
+              Paragraph
+             </div>
+             <br>
+           </div>
+          <button type="button" class="btn btn-outline-warning">Warning</button>
+        </div>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <div class="text-end">
+            <div class="display-6">
+              <div class="text-muted">
+                <b>Display 4 collaboration</b>
+              </div>
+            </div>
+            <br>
+            <div>
+              <b>H6 Heading</b>
+            </div>
+            <br>
+            <div>Paragraph</div>
+          </div>
+          <button type="button" class="btn btn-outline-warning">Warning</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <div class="display-6">
+        <b>Display 5 agreement</b>
+      </div>
+      <br>
+      <div class="card">
+        <div class="card-body">
+          <div>
+            <b>H5 Heading</b>
+          </div>
+          <br>
+          <div class="card">
+            <div class="card-body">
+              <div>Paragraph</div>
+              <br>
+              <button type="button" class="btn btn-success">Success</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
