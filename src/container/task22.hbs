@@ -1,34 +1,42 @@
 {{#with task22}}
     {{#with header}}
-       <h1>title: {{title}}</h1>
-       <h2>description: {{description}}</h2>
+        <div class="display-2">title: {{title}}</div>
+        <h2 class="text-end">description: {{description}}</h2>
        <br>
-       {{#each section}}
-          {{#with about_us}}
-            {{#with title_list}}
-               <h3>main: {{main}}</h3>
-               <h4>sub: {{sub}}</h4>
-            {{/with}}
-            <br>
-            <p>button: {{button}}</p>
-          {{/with}}
-           <br>
-          {{#with advantage}}
-             <b>title: {{title}}</b>
-             {{#each efficiency}}
-                <h5>title: {{title}}</h5>
-                <h6>sub_title: {{sub_title}}</h6>
-                <article>description: {{description}}</article>
-                <aside>button: {{button}}</aside>
-             {{/each}}
-             <br>
-             {{#each innovation}}
-                <b>title: {{title}}</b>
-                <samp>sub_title: {{sub_title}}</samp>
-                <span>description: {{description}}</span>
-                <strong>button: {{button}}</strong>
-             {{/each}}
-          {{/with}}
-       {{/each}}
+       <div class="card">
+         <div class="card-body">
+            <div class="card">
+               <div class="card-body">
+                 {{#each section}}
+                   {{#with about_us}}
+                     {{#with title_list}}
+                       <button class="btn btn-outline-info">main: {{main}}</button>
+                       <h4 class="text-muted">sub: {{sub}}</h4>
+                     {{/with}}
+                     <br>
+                     <p class="btn btn-outline-primary">button: {{button}}</p>
+                   {{/with}}
+                     <br>
+                    {{#with advantage}}
+                        <b class="btn btn-success">title: {{title}}</b>
+                      {{#each efficiency}}
+                        <h5 class="text-uppercase">title: {{title}}</h5>
+                        <h6 class="text-center">sub_title: {{sub_title}}</h6>
+                        <article class="text-bg-danger">description: {{description}}</article>
+                        <aside class="text-bg-light">button: {{button}}</aside>
+                      {{/each}}
+                      <br>
+                      {{#each innovation}}
+                        <b class="text-bg-secondary">title: {{title}}</b>
+                        <samp class="text-bg-dark">sub_title: {{sub_title}}</samp>
+                        <span class="taxt-bg-info">description: {{description}}</span>
+                        <strong class="text-bg-success">button: {{button}}</strong>
+                      {{/each}}
+                    {{/with}}
+                 {{/each}}
+               </div>
+            </div>
+         </div>
+       </div>
     {{/with}}
 {{/with}}
