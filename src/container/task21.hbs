@@ -1,43 +1,61 @@
-{{#with task21}}
-   <div>
-    {{#with heading}}
-        {{#each main}}
-            <h1>title: {{title}}</h1>
-            <h2>text: {{text}}</h2>
-            {{#with button_text}}
-                <b>solid: {{solid}}</b>
-                <p>outline: {{outline}}</p>
-            {{/with}}
-            <br>
-            <br>
-            {{#with second}}
-                <span>title: {{title}}</span>
-                <samp>text: {{text}}</samp>
-                {{#each button_text}}
-                   <article>solid: {{solid}}</article>
-                   <aside>outline: {{outline}}</aside>
-                {{/each}}
-            {{/with}}
-            <br>
-            <br>
-            {{#each subblock}}
-                <h3>title: {{title}}</h3>
-                <h4>text: {{text}}</h4>
-                {{#each button_text}}
-                   <h5>solid: {{solid}}</h5>
-                   <h6>outline: {{outline}}</h6>
-                {{/each}}
-            {{/each}}
-            <br>
-            <br>
-            {{#with nested_display}}
-                <div>title: {{title}}</div>
-                {{#each children_display}}
-                    <strong>title: {{title}}</strong>
-                    <small>text: {{text}}</small>
-                {{/each}}
-            {{/with}}
-        {{/each}}
-    {{/with}}
-   </div>
-{{/with}}
+<div class="p-5">
+  <div class="card">
+    <div class="card-body">
+        <div class="card">
+            <div class="card-body">
+             {{#with task21}}
+               <div>
+                {{#with heading}}
+                  {{#each main}}
+                     <div class="display-4">title: {{title}}</div>
+                     <div class="">text: {{text}}</div>
+                     {{#with button_text}}
+                     <b class="text-bg-secondary">solid: {{solid}}</b>
+                     <p class="btn btn-primary">outline: {{outline}}</p>
+                     {{/with}}
+                    <br>
+                    <br>
+                    <div class="card">
+                      <div class="card-body">
+                        {{#with second}}
+                          <span class="btn btn-outline-primary">title: {{title}}</span>
+                          <samp class="btn btn-outline-secondary">text: {{text}}</samp>
+                          {{#each button_text}}
+                            <article class="display-5">solid: {{solid}}</article>
+                            <aside class="text-end">outline: {{outline}}</aside>
+                          {{/each}}
+                        {{/with}}
+                      </div>
+                    </div>
+                    <br>
+                    <br>
+                      <div class="card">
+                        <div class="card-body">
+                          {{#each subblock}}
+                              <h3 class="display-6">title: {{title}}</h3>
+                              <h4>text: {{text}}</h4>
+                            {{#each button_text}}
+                              <h5 class="btn btn-dark">solid: {{solid}}</h5>
+                              <h6 class="btn btn-outline-dark">outline: {{outline}}</h6>
+                            {{/each}}
+                          {{/each}}
+                        </div>
+                      </div>
+                    <br>
+                    <br>
+                      {{#with nested_display}}
+                        <div class="btn btn-outline-dark">title: {{title}}</div>
+                        {{#each children_display}}
+                          <strong class="btn btn-info">title: {{title}}</strong>
+                          <p class="btn btn-warning">text: {{text}}</p>
+                        {{/each}} 
+                      {{/with}}
+                  {{/each}}
+                {{/with}}
+               </div>
+             {{/with}}
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
