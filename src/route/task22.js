@@ -1,65 +1,40 @@
-// ================================================================
-
-// router.get Створює нам один ентпоїнт
-
-//           ↙ тут вводимо шлях (PATH) до сторінки
-router.get('/task22', function (req, res) {
-    // res.render генерує нам HTML сторінку
-  
-    //            ↙ cюди вводимо назву файлу з сontainer
-    res.render('task22', {
-      layout: task22,
-      page_header: {
-        title: 'InnovaMind',
-        description: 'Welcome to our wonderful community',
-      },
-      section: {
-        about_us: {
-          title_list: {
-            main: 'InnovaMind',
-            sub: 'InnovaMind is a forward-thinking startup focused on innovation. We are dedicated to creating efficient and powerful software through the use of first-class functions.',
-          },
-          button: { text: 'Show more' },
-        },
-        advantage: {
-          title: 'Advantage',
-          efficiency: {
-            title: 'Efficiency',
-            sub_title: 'Streamline your software development',
-            description:
-              'Streamline your software development with our innovative platform...',
-            button: 'Show more',
-          },
-          innovation: {
-            title: 'Innovation',
-            sub_title:
-              'Forward-thinking approach to programming',
-            description:
-              ' Stay ahead of the curve with our forward-thinking approach to programming...',
-            button: 'Show more',
-          },
-          collaboration: {
-            title: 'Collaboration',
-            sub_title: 'Connect with like-minded developers',
-            description:
-              'Connect with a community of like-minded developers to share knowledge and insights...',
-            button: 'Show more',
-          },
-        },
-        agreement: {
-          title: 'Terms of use',
-          info: {
-            sub_title: 'Check out our requirements',
-            detail: {
-              text: 'By using or accessing the service, you agree to be bound by the terms and conditions outlined in the agreement.',
-              button: 'Аccept',
-            },
-          },
-        },
-      },
-    })
-    //                  ↑↑ сюди вводимо JSON дані
-  })
-  
-  // ================================================================
-  
+<div class="p-5">
+    <div class="card">
+        <div class="card-body">
+            {{#with task31}}
+                {{#with navigator}}
+                   {{#each links}}
+                     <p class="btn btn-primary">text: {{text}}</p>
+                     <span class="text-center">href: {{href}}</span>
+                     <br>
+                     <b class="btn btn-warning">text: {{text}}</b>
+                     <var class="text-uppercase">href: {{href}}</var>
+                     <br>
+                     <h3 class="btn btn-danger">text: {{text}}</h3>
+                     <samp class="text-lowercase">href: {{href}}</samp>
+                      <br>
+                      <br>
+                     {{#each button}}
+                      <article class="btn btn-success">text: {{text}}</article>
+                      <aside class="text-capitalize">href: {{href}}</aside>
+                     {{/each}}
+                   {{/each}}
+                   <br>
+                   <div class="card">
+                     <div class="card-body">
+                       {{#each header}}
+                         <small class="btn btn-outline-secondary">title: {{title}}</small>
+                         <h6 class="btn btn-outline-info">description: {{description}}</h6>
+                         <br>
+                         {{#with button}}
+                           <h5 class="btn btn-outline-dark">text: {{text}}</h5>
+                           <h2 class="btn btn-outline-primary">link: {{link}}</h2>
+                         {{/with}}
+                       {{/each}}
+                     </div>
+                   </div>
+                {{/with}}
+            {{/with}}
+        </div>
+    </div>
+</div>
