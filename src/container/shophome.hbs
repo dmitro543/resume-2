@@ -1,0 +1,37 @@
+<main class="p-5">
+    <div class="card">
+        <div class="card-body">
+           {{#with shophome}}
+                {{#with navigation}}
+                   {{#each links}}
+                     <p class="btn btn-primary">text: {{text}}</p>
+                     <span class="text-center">href: {{href}}</span>
+                     <br>
+                     <b class="btn btn-warning">text: {{text}}</b>
+                     <var class="text-uppercase">href: {{href}}</var>
+                     <br>
+                     <h3 class="btn btn-danger">text: {{text}}</h3>
+                     <samp class="text-lowercase">href: {{href}}</samp>
+                   {{/each}}
+                {{/with}}
+                   <br>
+                   <br>
+                <div class="card">
+                    <div class="card-body">
+                        {{#with newsblock}}
+                           <article class="btn btn-outline-success">title: {{title}}</article>
+                           {{#each cards}}
+                              <aside class="text-bg-success">title: {{title}}</aside>
+                              <h5 class="text-bg-danger">description: {{description}}</h5>
+                              <br>
+                              <br>
+                              <h6 class="text-bg-primary">title: {{title}}</h6>
+                              <p class="text-bg-warning">description: {{description}}</p>
+                           {{/each}}
+                        {{/with}}
+                    </div>
+                </div>
+            {{/with}}
+        </div>
+    </div>
+</main>
