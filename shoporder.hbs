@@ -1,0 +1,41 @@
+<main>
+    <div class="p-5">
+        <div class="card">
+            <div class="card-body">
+                {{#with shoporder}}
+                   {{#with navigation}}
+                      {{#each links}}
+                         <p class="btn btn-primary">text: {{text}}</p>
+                         <b class="btn btn-danger">href: {{href:}}</b>
+                         <br>
+                         <h1 class="text-success">text: {{text}}</h1>
+                         <h2 class="text-warning">href: {{href}}</h2>
+                         <br>
+                         <span class="text-info">text: {{text}}</span>
+                         <samp class="btn btn-outline-primary">href: {{href}}</samp>
+                         <br>
+                         <h3 class="text-danger">text: {{text}}</h3>
+                      {{/each}}
+                   {{/with}}
+                   <br>
+                   <div class="card">
+                     <div class="card-body">
+                        <h4 class="btn btn-info">header: {{header}}</h4>
+                        <br>
+                        {{#with contacts_data}}
+                           <h5 class="text-center">title: {{title}}</h5>
+                           <br>
+                           {{#each buttons}}
+                              <h6 class="btn btn-outline-warning">text: {{text}}</h6>
+                              <br>
+                              <br>
+                              <aside class="btn btn-outline-success">text: {{text}}</aside>
+                           {{/each}}
+                        {{/with}}
+                     </div>
+                   </div>
+                {{/with}}
+            </div>
+        </div>
+    </div>
+</main>
