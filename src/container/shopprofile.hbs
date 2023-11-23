@@ -1,0 +1,44 @@
+<main class="p-5">
+    <div class="card">
+        <div class="card-body">
+            {{#with shopprofile}}
+               {{#with navigation}}
+                      {{#each links}}
+                         <p class="btn btn-primary">text: {{text}}</p>
+                         <b class="btn btn-danger">href: {{href:}}</b>
+                         <br>
+                         <h1 class="text-success">text: {{text}}</h1>
+                         <h2 class="text-warning">href: {{href}}</h2>
+                         <br>
+                         <span class="text-info">text: {{text}}</span>
+                         <samp class="btn btn-outline-primary">href: {{href}}</samp>
+                      {{/each}}
+                {{/with}}
+                <br>
+                <h3 class="text-danger">header: {{header}}</h3>
+                <br>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        {{#with purchase}}
+                           <h4 class="btn btn-danger">tabs: {{tabs}}</h4>
+                           {{#each actionBlock}}
+                              <h6 class="text-info">input: {{input}}</h6>
+                           {{/each}}
+                           {{#each buttons}}
+                              <aside class="btn btn-outline-success">text: {{text}}</aside>
+                              <var class="text-muted">link: {{link}}</var>
+                              <br>
+                              <article class="btn btn-outline-danger">text: {{text}}</article>
+                              <pre class="text-end">link: {{link}}</pre>
+                              <br>
+                              <h5 class="btn btn-outline-info">text: {{text}}</h5>
+                              <p class="text-uppercase">link: {{link}}</p>
+                           {{/each}}
+                        {{/with}}
+                    </div>
+                </div>
+            {{/with}}
+        </div>
+    </div>
+</main>
