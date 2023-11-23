@@ -1,7 +1,7 @@
 // ================================================================
 router.get('/shopcart', function (req, res) {
     res.render('shopcart', {
-      layout: 'shop',
+      layout: 'shopcart',
       navigation: {
         links: [
           {
