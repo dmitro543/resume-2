@@ -1,7 +1,7 @@
 // ================================================================
 router.get('/shopprofile', function (req, res) {
     res.render('shopprofile', {
-      layout: 'shop',
+      layout: 'shopprofile',
       navigation: {
         links: [
           {
